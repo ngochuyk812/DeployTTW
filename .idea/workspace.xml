@@ -10,34 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc76f0f4-b08a-497a-865d-c4883f45e10a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/User/hideImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/thong-ke-log.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/FilterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/FilterAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginWithFb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginWithFb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginWithGg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginWithGg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/OrderControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/OrderControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PriceCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PriceCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/LogDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/LogDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/OderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/OderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/PaymentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/PaymentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/RoleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/RoleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TransportAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/TransportAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Oder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Oder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/SideBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/SideBar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/quan-ly-bao-cao.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/quan-ly-bao-cao.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/table-data-oder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/table-data-oder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +46,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -73,109 +57,55 @@
     </option>
   </component>
   <component name="ProjectId" id="2OSPah6z240YvCJilawG0hn07rb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/HOC/TTW/Project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9e727fdd3aec8274f46685441900280d&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/ProjectInteelij/TTLTW/Project_Web/src/main/webapp/Img/User",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "9e727fdd3aec8274f46685441900280d",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Controller" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ProjectInteelij\TTLTW\Project_Web\src\main\webapp\Img\User" />
+      <recent name="C:\ProjectInteelij\TTLTW\Project_Web\src\main\webapp\Page\Admin\doc\PostStatus" />
+      <recent name="C:\ProjectInteelij\TTLTW\Project_Web\src\main\webapp\Component" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ProjectInteelij\TTLTW\Project_Web\src\main\webapp\Page\Admin\doc" />
       <recent name="D:\HOC\TTW\Project\src\main\webapp\javascrip" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Security" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.68">
-    <configuration name="LogDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DAO.LogDAO" />
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OderDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DAO.OderDAO" />
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Security.ReLogin" />
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Security.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoleDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DAO.RoleDAO" />
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransportAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DAO.TransportAPI" />
-      <module name="Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 9.0.68" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.68" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.70" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.70" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="Project:war exploded">
           <settings>
@@ -184,7 +114,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="7801ac42-2878-4c96-989e-d3cb12204fc4" />
+        <option name="BASE_DIRECTORY_NAME" value="bc7a9eb3-01b7-472a-ac6a-e08f3a85aabc" />
         <option name="HTTP_PORT" value="3000" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
@@ -192,8 +122,18 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58608" />
+        <option name="DEBUG_PORT" value="59389" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -262,23 +202,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.LogDAO" />
-      <item itemvalue="Application.ReLogin" />
-      <item itemvalue="Application.RoleDAO" />
-      <item itemvalue="Application.OderDAO" />
-      <item itemvalue="Application.TransportAPI" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.68" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.TransportAPI" />
-        <item itemvalue="Application.ReLogin" />
-        <item itemvalue="Application.RoleDAO" />
-        <item itemvalue="Application.LogDAO" />
-        <item itemvalue="Application.OderDAO" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -303,10 +226,35 @@
       <workItem from="1682786218436" duration="893000" />
       <workItem from="1682940967146" duration="17902000" />
       <workItem from="1683048129137" duration="25564000" />
+      <workItem from="1683257010313" duration="7047000" />
+      <workItem from="1683264115841" duration="2372000" />
+      <workItem from="1683374127494" duration="13817000" />
+      <workItem from="1683424003466" duration="1444000" />
+      <workItem from="1683430324976" duration="3718000" />
+      <workItem from="1683648197964" duration="7000" />
+      <workItem from="1683728073210" duration="14000" />
+      <workItem from="1683763242703" duration="20000" />
+      <workItem from="1683763650508" duration="120000" />
+      <workItem from="1683765991860" duration="6000" />
+      <workItem from="1684032185026" duration="13000" />
+      <workItem from="1684202893689" duration="7000" />
+      <workItem from="1684457146208" duration="7624000" />
+      <workItem from="1684467112941" duration="6725000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,9 +1,8 @@
 package Controller;
 
 import DAO.*;
-import Model.*;
-import Model.Oder;
 import Model.Product;
+import Model.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -81,6 +80,66 @@ public class Admin extends HttpServlet {
         req.getRequestDispatcher("/Page/Admin/doc/table-data-product.jsp").forward(req, res);
     }
 
+    protected void logPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, SQLException {
+        List<Log> list = LogDAO.getAllLog();
+        Map<String, List<Log>> map = new HashMap<>();
+
+        map.put("logs", list);
+        for (Log tmp : list) {
+            addLogIntoMap(map, tmp);
+
+        }
+        req.setAttribute("map", map);
+        req.getRequestDispatcher("/Page/Admin/doc/thong-ke-log.jsp").forward(req, resp);
+    }
+
+    public void addLogIntoMap(Map<String, List<Log>> map, Log tmp) {
+        if (tmp.getLevel() == 0) {
+            if (!map.containsKey("Info")) {
+                List<Log> array = new ArrayList<>();
+                array.add(tmp);
+                map.put("Info", array);
+
+            } else {
+                map.get("Info").add(tmp);
+            }
+
+        } else {
+            if (tmp.getStatus() == 1) {
+                if (!map.containsKey("Alert")) {
+                    List<Log> array = new ArrayList<>();
+                    array.add(tmp);
+                    map.put("Alert", array);
+
+                } else {
+                    map.get("Alert").add(tmp);
+                }
+            } else {
+                if (tmp.getStatus() == 2) {
+                    if (!map.containsKey("Warning")) {
+                        List<Log> array = new ArrayList<>();
+                        array.add(tmp);
+                        map.put("Warning", array);
+
+                    } else {
+                        map.get("Warning").add(tmp);
+                    }
+                } else {
+                    if (tmp.getStatus() == 3) {
+                        if (!map.containsKey("Danger")) {
+                            List<Log> array = new ArrayList<>();
+                            array.add(tmp);
+                            map.put("Danger", array);
+
+                        } else {
+                            map.get("Danger").add(tmp);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     protected void oderPage(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
         ArrayList<Oder> oders = null;
@@ -116,10 +175,8 @@ public class Admin extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         res.setContentType("text/html;charset=UTF-8");
         res.setCharacterEncoding("UTF-8");
-        Cookie[] cookies = req.getCookies();
         String action = req.getParameter("action");
         User user = (User) req.getSession().getAttribute("user");
-
         req.setAttribute("userInfo", user);
         String id = req.getParameter("id");
         if (action != null && action.equalsIgnoreCase("editproduct")) {
@@ -136,15 +193,19 @@ public class Admin extends HttpServlet {
 
         }
     }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         res.setContentType("text/html;charset=UTF-8");
         res.setCharacterEncoding("UTF-8");
         User user = (User) req.getSession().getAttribute("user");
-
         req.setAttribute("userInfo", user);
-
+        String hostname = req.getServerName();
+        int port = req.getServerPort();
+        String url = "http://" + hostname + ":" + port;
+        System.out.println(url);
+        req.setAttribute("url", url);
         String page = req.getParameter("page");
         try {
             User u = UserDAO.getUserByName(user.getUserName());
@@ -165,6 +226,9 @@ public class Admin extends HttpServlet {
                 case "odermanagement":
                     oderPage(req, res);
                     break;
+                case "logmanagement":
+                    logPage(req, res);
+                    break;
 
 
                 default:
@@ -176,6 +240,7 @@ public class Admin extends HttpServlet {
         }
 
     }
+
     public void getAllUser(HttpServletRequest req, HttpServletResponse resp) throws SQLException, ServletException, IOException {
         List<User> list = UserDAO.getAllUser();
         Map<String, List<User>> map = new HashMap<>();
@@ -193,7 +258,7 @@ public class Admin extends HttpServlet {
                 addMap(map, tmp);
 
             } else {
-                if (tmp.getStatus()  == 1) {
+                if (tmp.getStatus() == 1) {
                     if (!map.containsKey("activeAccount")) {
                         List<User> array = new ArrayList<>();
                         array.add(tmp);
@@ -207,10 +272,8 @@ public class Admin extends HttpServlet {
             }
 
         }
-        System.out.println(132);
-        System.out.println(map.get("adminsAccount"));
-        req.setAttribute("map",map);
-        req.getRequestDispatcher("/Page/Admin/doc/thong-ke-tai-khoan.jsp").forward(req,resp);
+        req.setAttribute("map", map);
+        req.getRequestDispatcher("/Page/Admin/doc/thong-ke-tai-khoan.jsp").forward(req, resp);
     }
 
     public void addMap(Map<String, List<User>> map, User tmp) {
