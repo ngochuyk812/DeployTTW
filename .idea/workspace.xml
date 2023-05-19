@@ -11,16 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bc76f0f4-b08a-497a-865d-c4883f45e10a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/FilterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/FilterAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/OrderAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/OrderAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/RoleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/RoleDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Security/Authorizeds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Security/Authorizeds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/SideBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/SideBar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/table-data-oder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/table-data-oder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascrip/ordersAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascrip/ordersAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascrip/ordersStatis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascrip/ordersStatis.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/HOC/TTW/Project/src/main/webapp/Page/Admin/doc",
+    "last_opened_file_path": "D:/HOC/TTW/Project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -299,6 +289,7 @@
       <workItem from="1683771791194" duration="7820000" />
       <workItem from="1683792253715" duration="6819000" />
       <workItem from="1683961270371" duration="18281000" />
+      <workItem from="1684458659768" duration="1685000" />
     </task>
     <servers />
   </component>
