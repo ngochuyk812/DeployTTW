@@ -225,7 +225,7 @@ public class UserDAO {
     public static List<User> getAllUser() throws SQLException {
         List<User> list = new ArrayList<>();
         Connection c = ConnectDB.getConnect();
-        PreparedStatement stmt = c.prepareStatement("select * from user where role>3");
+        PreparedStatement stmt = c.prepareStatement("select * from user where role>=3");
         ResultSet rs = stmt.executeQuery();
         while (rs.next()) {
 

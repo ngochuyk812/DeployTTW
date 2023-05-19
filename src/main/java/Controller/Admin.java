@@ -60,7 +60,6 @@ public class Admin extends HttpServlet {
         try {
             List<User> listUser = UserDAO.getAllUser();
             List<Role> listRole = RoleDAO.getAllRole();
-            System.out.println(listRole.size());
             req.setAttribute("listUser", listUser);
             req.setAttribute("listRole", listRole);
             req.getRequestDispatcher("/Page/Admin/doc/table-data-table.jsp").forward(req, res);
@@ -83,12 +82,10 @@ public class Admin extends HttpServlet {
     }
 
     protected void oderPage(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        System.out.println("Oder");
 
         ArrayList<Oder> oders = null;
         try {
             oders = OderDAO.getOrder();
-            System.out.println(oders.size());
             req.setAttribute("oders", oders);
             req.getRequestDispatcher("/Page/Admin/doc/table-data-oder.jsp").forward(req, res);
         } catch (SQLException e) {
@@ -210,12 +207,15 @@ public class Admin extends HttpServlet {
             }
 
         }
-        System.out.println(map.get("sizeAllUser").size());
+        System.out.println(132);
+        System.out.println(map.get("adminsAccount"));
         req.setAttribute("map",map);
         req.getRequestDispatcher("/Page/Admin/doc/thong-ke-tai-khoan.jsp").forward(req,resp);
     }
 
     public void addMap(Map<String, List<User>> map, User tmp) {
+        System.out.println(142);
+        System.out.println(tmp.getRole().getId());
         if (tmp.getRole().getId() == 0) {
             if (!map.containsKey("customersAccount")) {
                 List<User> list = new ArrayList<>();
@@ -227,7 +227,7 @@ public class Admin extends HttpServlet {
             }
 
         } else {
-            if (tmp.getRole().getId() == 1) {
+            if (tmp.getRole().getId() == 5) {
                 if (!map.containsKey("employeesAccount")) {
                     List<User> list = new ArrayList<>();
                     list.add(tmp);
@@ -238,7 +238,7 @@ public class Admin extends HttpServlet {
                 }
 
             } else {
-                if (tmp.getRole().getId() == 2) {
+                if (tmp.getRole().getId() == 4) {
                     if (!map.containsKey("managesAccount")) {
                         List<User> list = new ArrayList<>();
                         list.add(tmp);

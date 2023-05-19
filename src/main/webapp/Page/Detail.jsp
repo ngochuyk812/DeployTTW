@@ -290,7 +290,7 @@
         deleteIcon.classList.add("fa-trash");
         deleteIcon.addEventListener("click", (e) => {
             delImg(e);
-            ImgObject.arrFileImg[index].status=0
+            arrFileImg[index].status=0
         })
         newDiv.appendChild(deleteIcon);
         const newImg = document.createElement("img");
@@ -308,7 +308,7 @@
         deleteIcon.classList.add("fa-trash");
         deleteIcon.addEventListener("click", (e) => {
             delImg(e)
-            VideoObject.arrFileVideo[index].status=0
+            arrFileVideo[index].status=0
         })
 
         newDiv.appendChild(deleteIcon);
