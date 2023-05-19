@@ -2,6 +2,7 @@
     return money.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 
 }
+var dataOrder = []
     function time() {
     var today = new Date();
     var weekday = new Array(7);
@@ -315,7 +316,7 @@
         success: function (data) {
             // fake data chuyen thanh JSON.parse(data)
             dataMain =  JSON.parse(data)
-
+            dataOrder = dataMain
             initTopTotal(dataMain)
             initChart(dataMain)
             initPieChart(dataMain)

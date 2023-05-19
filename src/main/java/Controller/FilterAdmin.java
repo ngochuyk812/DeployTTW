@@ -1,5 +1,7 @@
 package Controller;
 import Model.User;
+import Security.Authorizeds;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +17,8 @@ public class FilterAdmin implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         User user = (User) req.getSession().getAttribute("user");
         if (user != null) {
-            if (user.getRole().getId() == 3) {
+
+            if (Authorizeds.authorizeds(req, Authorizeds.ADMIN_PAGE)) {
                 chain.doFilter(request, response);
             } else {
                 request.getRequestDispatcher("Page/404.jsp").forward(request, response);
