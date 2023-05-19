@@ -3,6 +3,7 @@ package Controller;
 import DAO.*;
 import Model.Product;
 import Model.*;
+import Security.Authorizeds;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -152,7 +153,12 @@ public class Admin extends HttpServlet {
         }
 
     }
-
+    protected void oderStatis(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+            req.getRequestDispatcher("/Page/Admin/doc/order_statistics.jsp").forward(req, res);
+    }
+    protected void rolePage(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        req.getRequestDispatcher("/Page/Admin/doc/role.jsp").forward(req, res);
+    }
     protected void setShowProfile(HttpServletRequest req) {
         String username = "";
         String img = "";
@@ -215,16 +221,39 @@ public class Admin extends HttpServlet {
                     postPage(req, res);
                     break;
                 case "usermanagement":
-                    userPage(req, res);
+                    if(Authorizeds.authorizeds(req, Authorizeds.USER_VIEW))
+                        userPage(req, res);
+                    else res.setStatus(401);
+
                     break;
                 case "userstatistic":
-                    getAllUser(req, res);
+                    if(Authorizeds.authorizeds(req, Authorizeds.USER_VIEW))
+                        getAllUser(req, res);
+                    else res.setStatus(401);
+
+                    break;
+                case "role":
+                    if(Authorizeds.authorizeds(req, Authorizeds.ROLE_VIEW))
+                        rolePage(req, res);
+                    else res.setStatus(401);
+
                     break;
                 case "productmanagement":
-                    productPage(req, res);
+                    if(Authorizeds.authorizeds(req, Authorizeds.PRODUCT_VIEW))
+                        productPage(req, res);
+                    else res.setStatus(401);
                     break;
                 case "odermanagement":
+                    if(Authorizeds.authorizeds(req, Authorizeds.ORDER_VIEW))
                     oderPage(req, res);
+                    else res.setStatus(401);
+
+                    break;
+                case "orderstatistics":
+                    if(Authorizeds.authorizeds(req, Authorizeds.ORDER_VIEW))
+                        oderStatis(req, res);
+                    else res.setStatus(401);
+
                     break;
                 case "logmanagement":
                     logPage(req, res);
