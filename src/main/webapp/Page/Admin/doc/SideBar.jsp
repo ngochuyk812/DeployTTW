@@ -7,9 +7,9 @@
     <title>Title</title>
 </head>
 <% User user = (User) request.getAttribute("userInfo") ;%>
-
+<% String url = (String)request.getAttribute("url");%>
 <aside class="app-sidebar">
-    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<%=user.getAvatar()%>" width="50px"
+    <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<%=user.getAvatar()!=null?user.getAvatar():url+"/Img/User/hideImage.png"%>" width="50px"
                                         alt="User Image">
         <div>
             <p class="app-sidebar__user-name"><b><%=user.getFullName()%>
@@ -19,8 +19,6 @@
     </div>
     <hr>
     <ul class="app-menu">
-
-
         <li><a class="app-menu__item " href="admin?page=index"><i class='app-menu__icon bx bx-tachometer'></i><span
                 class="app-menu__label">Bảng điều khiển</span></a></li>
         <li><a class="app-menu__item" href="admin?page=post"><i
@@ -35,11 +33,12 @@
         </li>
         <li><a class="app-menu__item" href="admin?page=oderManagement"><i class='app-menu__icon bx bx-task'></i><span
                 class="app-menu__label">Quản lý đơn hàng</span></a></li>
+        <li><a class="app-menu__item" href="admin?page=logmanagement"><i class='app-menu__icon bx bx-task'></i><span
+                class="app-menu__label">Thống kê Log</span></a></li>
         <li><a class="app-menu__item" href="admin?page=orderStatistics"><i class='app-menu__icon bx bx-task'></i><span
                 class="app-menu__label">Thống kê đơn hàng</span></a></li>
         <li><a class="app-menu__item" href="admin?page=role"><i class='app-menu__icon bx bx-task'></i><span
                 class="app-menu__label">Phân quyền</span></a></li>
-
     </ul>
 </aside>
 </body>
