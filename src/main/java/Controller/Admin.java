@@ -82,6 +82,10 @@ public class Admin extends HttpServlet {
         req.getRequestDispatcher("/Page/Admin/doc/table-data-product.jsp").forward(req, res);
     }
 
+    protected void productStatics(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        req.getRequestDispatcher("/Page/Admin/doc/product_statistics.jsp").forward(req, res);
+    }
+
     protected void oderPage(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         System.out.println("Oder");
 
@@ -167,6 +171,9 @@ public class Admin extends HttpServlet {
                     break;
                 case "productmanagement":
                     productPage(req, res);
+                    break;
+                case "productstaticstics":
+                    productStatics(req, res);
                     break;
                 case "odermanagement":
                     oderPage(req, res);

@@ -315,7 +315,8 @@
         success: function (data) {
             // fake data chuyen thanh JSON.parse(data)
             dataMain =  JSON.parse(data)
-
+            dataOrder=  JSON.parse(data)
+            console.log(dataOrder)
             initTopTotal(dataMain)
             initChart(dataMain)
             initPieChart(dataMain)

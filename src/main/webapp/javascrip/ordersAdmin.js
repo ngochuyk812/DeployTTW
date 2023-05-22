@@ -128,7 +128,7 @@ const init = ()=>{
         success: function (data) {
             console.log(JSON.parse(data))
             // fake data chuyen thanh JSON.parse(data)
-            dataAjax = JSON.parse(data)
+            dataOrder = JSON.parse(data)
 
             $('#myTable').DataTable({
                 data: dataOrder,
