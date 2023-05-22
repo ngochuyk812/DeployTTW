@@ -1,6 +1,7 @@
 package Controller;
 
 import DAO.*;
+import DTO.RoleDTO;
 import Model.Product;
 import Model.*;
 import Security.Authorizeds;
@@ -59,7 +60,7 @@ public class Admin extends HttpServlet {
         setShowProfile(req);
         try {
             List<User> listUser = UserDAO.getAllUser();
-            List<Role> listRole = RoleDAO.getAllRole();
+            List<RoleDTO> listRole = RoleDAO.getAllRole();
             req.setAttribute("listUser", listUser);
             req.setAttribute("listRole", listRole);
             req.getRequestDispatcher("/Page/Admin/doc/table-data-table.jsp").forward(req, res);
