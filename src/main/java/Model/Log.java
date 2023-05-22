@@ -3,12 +3,8 @@ package Model;
 import Beans.AbBean;
 import Connect.ConnectDB;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Timestamp;
+import java.sql.*;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -47,6 +43,16 @@ public class Log implements AbBean {
     }
 
     public Log(int level, int userID, String src, String content, Date createAt, int status) {
+        this.level = level;
+        this.userID = userID;
+        this.src = src;
+        this.content = content;
+        this.createAt = createAt;
+        this.status = status;
+    }
+
+    public Log(int id,int level, int userID, String src, String content, Date createAt, int status) {
+        this.id=id;
         this.level = level;
         this.userID = userID;
         this.src = src;
@@ -118,20 +124,20 @@ public class Log implements AbBean {
     public static void setLevelMapping(Map<Integer, String> levelMapping) {
         Log.levelMapping = levelMapping;
     }
+    public String getNameStatus() {
+        return this.status==1?"Hoạt động":"";
+    }
 
     @Override
     public boolean insert(Connection connect) throws SQLException {
-        Date date = new Date();
-        Object param = new Timestamp(date.getTime());
-        String sqlUpdate = "INSERT INTO logs(`level`, `idUser`,src,content,createAt,`status`) values(?,?,?,?,?,?)";
+        String sqlUpdate = "INSERT INTO logs(`level`, `idUser`,src,content,`status`) values(?,?,?,?,?)";
         Connection conn = ConnectDB.getConnect();
         PreparedStatement pstmt = conn.prepareStatement(sqlUpdate);
         pstmt.setInt(1, this.level);
         pstmt.setObject(2, this.userID==-1?null:this.userID);
         pstmt.setString(3, this.src);
         pstmt.setString(4, this.content);
-        pstmt.setObject(5, this.createAt==null?param:this.createAt);
-        pstmt.setInt(6, this.status);
+        pstmt.setInt(5, this.status);
         int rowAffected = pstmt.executeUpdate();
         return rowAffected==1;
     }

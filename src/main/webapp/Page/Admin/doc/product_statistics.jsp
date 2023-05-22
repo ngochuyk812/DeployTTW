@@ -65,7 +65,7 @@
             <div class="widget-small primary coloured-icon"><i class="icon bx bxs-purchase-tag-alt fa-3x"></i>
                 <div class="info">
                     <h4>Tổng sản phẩm</h4>
-                    <p><b>${map.get("sizeAllUser").size()} sản phẩm</b></p>
+                    <p><b class="count_all_product"> sản phẩm</b></p>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
             <div class="widget-small info coloured-icon"><i class="icon bx bxs-purchase-tag-alt fa-3x"></i>
                 <div class="info">
                     <h4>Sản phẩm còn hàng</h4>
-                    <p><b>${map.get("blockAccount").size()} sản phẩm</b></p>
+                    <p><b class="count_available_product"> sản phẩm</b></p>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
             <div class="widget-small warning coloured-icon"><i class="icon fa-3x bx bxs-tag-x"></i>
                 <div class="info">
                     <h4>sản phẩm hết hàng</h4>
-                    <p><b>${map.get("activeAccount").size()} sản phẩm</b></p>
+                    <p><b class="count_unavailable_product">sản phẩm</b></p>
                 </div>
             </div>
         </div>
@@ -295,6 +295,10 @@
                 // fake data chuyen thanh JSON.parse(data)
                 dataMain =  JSON.parse(data)
                 console.log(dataMain)
+                document.querySelector('.count_all_product').textContent = dataMain.length + " sản phẩm"
+                document.querySelector('.count_available_product').textContent = dataMain.filter(tmp => tmp.quantity >0).length + " sản phẩm"
+                document.querySelector('.count_unavailable_product').textContent = dataMain.filter(tmp => tmp.quantity ===0).length + " sản phẩm"
+
                 initTable(dataMain)
                 initTableStatus(dataMain)
             }

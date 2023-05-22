@@ -504,6 +504,12 @@ const saveUpdate = ()=>{
     console.log(data, address )
     if(address !== ""|| data !== '' ){
         $.ajax({
+            statusCode: {
+                401: function() {
+                    swal("Bạn không có quyền thực hiện chức năng này.!", {});
+
+                }
+            },
             url: "/api/order?action=update",
             method: "POST",
             data:{
@@ -543,6 +549,12 @@ document.querySelector(".cancelOrder").addEventListener('click',(e)=>{
     }).then((willDelete) => {
         if (willDelete) {
             $.ajax({
+                statusCode: {
+                    401: function() {
+                        swal("Bạn không có quyền thực hiện chức năng này.!", {});
+
+                    }
+                },
                 url: "/api/order?action=update",
                 method: "POST",
                 data:{

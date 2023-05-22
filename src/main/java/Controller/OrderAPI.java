@@ -9,6 +9,7 @@ import Model.Oder;
 import Model.OrderDetail;
 import Model.RespJsonServlet;
 import Model.User;
+import Security.Authorizeds;
 import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
@@ -49,10 +50,14 @@ public class OrderAPI extends HttpServlet {
         }
         switch (action){
             case "delete" :
+                if(Authorizeds.authorizeds(req, Authorizeds.ORDER_DEL))
                 try {
                     deleteOrder(req,res);
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
+                }
+                else{
+                    res.setStatus(401);
                 }
                 break;
             case "update_address":
@@ -67,11 +72,13 @@ public class OrderAPI extends HttpServlet {
                 checkOrderDetails(req,res, id);
                 break;
             case "update":
-                try {
+                if(Authorizeds.authorizeds(req, Authorizeds.ORDER_UPDATE))
+                    try {
                     updateOrder(req,res);
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
+                else res.setStatus(401);
                 break;
             default:
 

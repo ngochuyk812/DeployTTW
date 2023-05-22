@@ -300,11 +300,20 @@
             buttons: ["Hủy bỏ", "Đồng ý"],
         }).then((willDelete) => {
             if (willDelete) {
-                $.ajax({
+                $.ajax(
+
+                    {
+                        statusCode: {
+                            401: function() {
+                                swal("Bạn không có quyền thực hiện chức năng này.!", {});
+
+                            }
+                        },
                     url: "/api/order?action=delete&id=" + id,
                     type: "POST",
                     contentType: 'application/x-www-form-urlencoded',
                     success: function (data) {
+                        console.log(data)
                         console.log(data)
                         if (JSON.parse(data) === 1)
                             r.parentNode.parentNode.parentNode.remove()

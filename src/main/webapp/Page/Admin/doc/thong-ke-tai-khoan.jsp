@@ -57,7 +57,7 @@
             <div class="widget-small info coloured-icon"><i class='icon bx bxs-user-x fa-3x'></i>
                 <div class="info">
                     <h4>Tài khoản đã khóa</h4>
-                    <p><b>${map.get("blockAccount").size()} tài khoản</b></p>
+                    <p><b>${map.get("blockAccount")!=null?map.get("blockAccount").size():0} tài khoản</b></p>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
             <div class="widget-small warning coloured-icon"><i class='icon  bx bxs-user-check fa-3x'></i>
                 <div class="info">
                     <h4>Tài khoản hoạt động</h4>
-                    <p><b>${map.get("activeAccount").size()} tài khoản</b></p>
+                    <p><b>${map.get("activeAccount")!=null?map.get("activeAccount").size():0} tài khoản</b></p>
                 </div>
             </div>
         </div>
@@ -74,8 +74,8 @@
         <div style="width: 30px" class="col-md-6 col-lg-3">
             <div class="widget-small primary coloured-icon"><i class='icon bx bxs-user fa-3x'></i>
                 <div class="info">
-                    <h4>Tài khoản khách hàng</h4>
-                    <p><b>${map.get("customersAccount").size()} tài khoản</b></p>
+                    <h4>Tài khoản Admin</h4>
+                    <p><b>${map.get("adminAccount")!=null?map.get("adminAccount").size():0} tài khoản</b></p>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
             <div class="widget-small warning coloured-icon"><i class='icon  bx bxs-user fa-3x'></i>
                 <div class="info">
                     <h4>Tài khoản nhân viên</h4>
-                    <p><b>${map.get("employeesAccount").size()} tài khoản</b></p>
+                    <p><b>${map.get("employeesAccount")!=null?map.get("employeesAccount").size():0} tài khoản</b></p>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
             <div class="widget-small danger coloured-icon"><i class='icon fa-3x bx bxs-user'></i>
                 <div class="info">
                     <h4>Tài khoản quản lý</h4>
-                    <p><b>${map.get("managesAccount").size()} tài khoản</b></p>
+                    <p><b>${map.get("managesAccount")!=null?map.get("managesAccount").size():0} tài khoản</b></p>
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
         <div class="col-md-12">
             <div class="tile">
                 <div>
-                    <h3 class="tile-title">Tài khoản khách hàng</h3>
+                    <h3 class="tile-title">Tài khoản Admin</h3>
                 </div>
                 <div class="tile-body">
                     <table class="table table-hover table-bordered js-copytextarea" cellpadding="0" cellspacing="0"
@@ -220,7 +220,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <c:forEach items="${map.get('customersAccount')}" var="item" varStatus="loop">
+                        <c:forEach items="${map.get('adminsAccount')}" var="item" varStatus="loop">
                             <tr data-id="${item.id}">
                                 <td>#${item.id}</td>
                                 <td id="userName">${item.userName}</td>
