@@ -237,6 +237,7 @@ label {
 button {
     border-radius: 0;
 }
+
 button:focus {
     outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -16429,7 +16430,6 @@ td, th {
 }
 
 .modal-footer {
-<<<<<<< HEAD
     padding: 5px 16px;
     background-color: white;
     color: white;
@@ -16437,16 +16437,6 @@ td, th {
 
 .dataTables_paginate > span {
     margin: 0px 8px;
-}
-
-.dataTables_paginate > span > .paginate_button, .previous, .next {
-    cursor: pointer;
-    padding: 5px 10px;
-    background: #001c40;
-    color: white;
-    font-weight: 800;
-    border-radius: 50%;
-    margin: 0px 4px;
 }
 
 .dataTables_paginate > span > .paginate_button:hover {
@@ -16475,38 +16465,43 @@ td, th {
 
 .isNotAction {
     background-color: #333 !important;
-=======
-  padding: 5px 16px;
-  background-color: white;
-  color: white;
+    padding: 5px 16px;
+    background-color: white;
+    color: white;
 }
- .dataTables_paginate>span{
-   margin: 0px 8px;
- }
-.dataTables_paginate>span>.paginate_button,.previous,.next {
-  cursor: pointer;
-  padding: 5px 10px;
-  background: #001c40;
-  color: white;
-  font-weight: 800;
-  border-radius: 50%;
-  margin: 0px 4px;
+
+.dataTables_paginate > span {
+    margin: 0px 8px;
 }
-.dataTables_paginate>span>.paginate_button:hover{
-  opacity: 0.7;
+
+.dataTables_paginate > span > .paginate_button, .previous, .next {
+    cursor: pointer;
+    padding: 5px 10px;
+    background: #001c40;
+    color: white;
+    font-weight: 800;
+    margin: 0px 4px;
 }
-.dataTables_paginate>span>.current{
-  background-color: rgb(255, 212, 59);
+
+.dataTables_paginate > span > .paginate_button:hover {
+    opacity: 0.7;
 }
-.statusActivity{
-  padding: 10px;
-  border-radius: 5px;
-  color: white !important;
+
+.dataTables_paginate > span > .current {
+    border-radius: 50%;
+    background-color: rgb(255, 212, 59);
 }
-.isAction{
-  background-color: #49be25 !important;
+
+.statusActivity {
+    padding: 10px;
+    border-radius: 5px;
+    color: white !important;
 }
-.isNotAction{
-  background-color: #333 !important;
->>>>>>> fda9de175ec97ec134ab29402c6e2e1fa4d46c3e
+
+.isAction {
+    background-color: #49be25 !important;
+}
+
+.isNotAction {
+    background-color: #333 !important;
 }
