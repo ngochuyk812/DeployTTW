@@ -10,58 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99ff1171-51e3-4c34-acd2-75b9fb1f33b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_003_36_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_003_36__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/.jsdtscope" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jpt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/PermissionControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/RoleAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DTO/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DTO/RoleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Img/User/hideImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/role.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/thong-ke-log.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascrip/roleAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB_Advanced - Shortcut.lnk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/FilterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/FilterAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/OrderAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/OrderAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/LogDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/LogDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CompanyControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CompanyControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PostProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PostProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/RoleAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/RoleAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/RoleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/RoleDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Filter/FilterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Filter/FilterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Security/Authorizeds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Security/Authorizeds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/SideBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/SideBar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/product_statistics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/product_statistics.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/quan-ly-bao-cao.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/quan-ly-bao-cao.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/table-data-oder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/table-data-oder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/thong-ke-tai-khoan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/thong-ke-tai-khoan.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascrip/ordersAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascrip/ordersAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascrip/ordersStatis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascrip/ordersStatis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DTO/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DTO/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Page/Admin/doc/role.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascrip/roleAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascrip/roleAdmin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +39,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.68">
     <configuration name="Unnamed" type="AntRunConfiguration" nameIsGenerated="true">
       <method v="2">
