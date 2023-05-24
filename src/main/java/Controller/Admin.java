@@ -262,7 +262,11 @@ public class Admin extends HttpServlet {
 
                     break;
                 case "logmanagement":
-                    logPage(req, res);
+                    if(Authorizeds.authorizeds(req, Authorizeds.LOG_VIEW))
+                        logPage(req, res);
+
+                    else res.setStatus(401);
+
                     break;
 
 
